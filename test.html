@@ -1,0 +1,40 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+ <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Voice Controlled Mail</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Untitled Document</title>
+
+</head>
+
+<body onload="welcomemsg()">
+ <div class="app"> 
+                <h3></h3>
+                <div class="input-single">
+                    <textarea id="note" placeholder="Create a new note by typing or using voice recognition." rows="6"></textarea>
+                </div>         
+                <button id="start-record-btn" title="Start Recording">Start Recognition</button>
+                <button id="pause-record-btn" title="Pause Recording">Pause Recognition</button>
+                <p id="recording-instructions">Press the <strong>Start Recognition</strong> button and allow access.</p>
+                
+                <h3></h3>
+                <ul id="notes">
+                    <li>
+                        <p class="no-notes">You don't have any notes.</p>
+                    </li>
+                </ul>
+<input onclick='responsiveVoice.speak("Enter Username ");' type='button' value='Username' />
+<input onclick='responsiveVoice.speak("Enter password ");' type='button' value='Password' />
+<br />
+<br />
+<!--<textarea style="-webkit-input-placeholder: color: #555;" placeholder="Type a Welcome Message for your website." id="text" class="input input--dropdown js--animations" cols="35" rows="3"></textarea>-->
+<button onclick='responsiveVoice.speak(note.value);' id="playbutton" class="butt js--triggerAnimation" type="button" value="Play"><img draggable="false" class="emoji" alt="??" src="https://s.w.org/images/core/emoji/11/svg/1f50a.svg"> Play</button>
+            </div>  
+			<script src='responsivevoice.js'></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="script.js"></script>  
+</body>
+</html>

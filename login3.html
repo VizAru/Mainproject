@@ -1,0 +1,51 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Login</title>
+<script src='js/responsivevoice.js' ></script>
+<script src='js/input.js' ></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script language="javascript">
+window.onload = function() {
+  
+};
+
+</script>
+<script language="jscript">
+jQuery(function($) {
+    $('.main').click(function() {
+        return false;
+    }).dblclick(function() {
+        document.getElementById("transcript").focus();
+  responsiveVoice.speak("Enter Username ");
+  startDictation()
+        return false;
+    });
+});
+</script>
+</head>
+
+<body class='main'>
+<form id="labnol" method="get" action="login.php">
+<label>Username</label>
+<input type="text" name="us" id="transcript" placeholder="Speak" />
+</form>
+<label>Password</label>
+<input type="password" name="psw" id="transcript2" placeholder="Speak" />
+</form>
+<script src='responsivevoice.js'></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="temp2.js"></script>  
+</body>
+</html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Untitled Document</title>
+</head>
+
+<body>
+</body>
+</html>
